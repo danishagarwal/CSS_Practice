@@ -1,0 +1,72 @@
+.mystery {
+  box-sizing: border-box;
+  width: 100px;
+  border: 10px solid black;
+  padding: 5px;
+}
+
+h1 {
+    color: blue;
+}
+
+.grid-container {
+    background-color: #eee;
+    /* max-width: 800px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-container > div {
+    text-align: center;
+    border: 1px solid #777;
+    padding: 20px;
+}
+
+.grid-container > div:nth-child(1) {
+    /* Manually assign width of column */
+    /* This means start at 1st point and take up 2 fractions */
+    grid-column: 1 / span 1; 
+    background-color: yellow;
+}
+
+.grid-container > div:nth-child(2) {
+    /* Manually assign width of column */
+    grid-column: 2 / span 2; 
+    background-color: green;
+    height: 200px;
+    
+}
+
+.grid-container > div:nth-child(3) {
+    /* Manually assign width of column */
+    grid-column: 4 / span 1; 
+    background-color:blue;
+}
+
+
+.grid-container > div:nth-child(4) {
+    grid-column: 1 / span 1; 
+    background-color: red;
+}
+
+
+.grid-container > div:nth-child(5) {
+    grid-column: 1 / span 1; 
+    background-color: #777;
+}
+
+.grid-container > div:nth-child(7) {
+    
+    background-color: orange;
+}
+
+.grid-container > div:nth-child(6) {
+    /* Manually assign width of column */
+    
+    background-color: #1cd0ac
+}
+.grid-container > div:nth-child(8) {
+    /* Manually assign width of column */
+    
+    background-color: orchid;
+}
